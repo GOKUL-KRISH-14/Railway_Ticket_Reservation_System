@@ -109,4 +109,22 @@ public class Reservation_System implements Booking_Service
             System.out.println("\n Cancellation Failed: Train not found or no bookings exist.");
         }
     }
+
+	@Override
+	public void showPassengersForTrain(int trainNo) 
+	{
+		List<Passenger> passengerList = bookings.get(trainNo);
+        if (passengerList == null || passengerList.isEmpty()) 
+        {
+            System.out.println("\nNo passengers found for Train No: " + trainNo);
+        } 
+        else 
+        {
+            System.out.println("\n🚆 Passengers booked for Train No: " + trainNo);
+            for (Passenger p : passengerList) {
+                p.showUserInfo();
+            }
+        }
+    }
+		
 }

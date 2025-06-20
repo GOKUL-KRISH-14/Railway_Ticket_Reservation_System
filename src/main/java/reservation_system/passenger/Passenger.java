@@ -22,6 +22,7 @@ public class Passenger extends User
 	{
 		// Calls the constructor of the abstract User class
 		super(name,age,gender);
+		 this.passengerId = passengerId;
 	}
 	
 	/*
@@ -39,6 +40,9 @@ public class Passenger extends User
 	@Override
 	 public void showUserInfo() 
 	{
-        System.out.println("Passenger ID: " + passengerId + ", Name: " + name + ", Age: " + age + ", Gender: " + gender);
+        System.out.println("\nPassenger ID: " + passengerId);
+        System.out.println("\nName: " + name);
+        System.out.println("\nAge: " + age);
+        System.out.println("\nGender: " + gender);
     }
 }

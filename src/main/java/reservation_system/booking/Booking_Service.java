@@ -18,4 +18,8 @@ public interface Booking_Service {
      * Cancels a booked ticket for a passenger using train number and passenger ID.
      */
     public void cancelTicket(int trainNo, int passengerId);
+    
+    // Show the passengers details
+    public void showPassengersForTrain(int trainNo);
+    
 }

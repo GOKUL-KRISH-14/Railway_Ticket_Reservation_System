@@ -123,10 +123,10 @@ public class Train
      */
     public void showTrainInfo() 
     {
-        System.out.println("Train No: " + trainNumber + 
-                           ", Name: " + trainName + 
-                           ", From: " + source + 
-                           ", To: " + destination + 
-                           ", Seats Left: " + availableSeats);
+        System.out.println("\nTrain No: " + trainNumber);
+        System.out.println("\nName: " + trainName);
+        System.out.println("\nSource Place: " + source); 
+        System.out.println("\nDetination Place: " + destination); 
+        System.out.println("\nSeats Left: " + availableSeats);
     }
 }
